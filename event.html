@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="text" id="fname" onchange="uppercase()">
+
+
+    <h1 onmouseover="mover(this)" onmouseout="mout(this)">Hover Me</h1>
+
+    <button type="button" id="btn" onclick="button()">Event Listener</button>
+
+	<script>
+		function uppercase(){
+			var x,y; 
+			x = document.getElementById("fname");
+			x.value= x.value.toUpperCase();
+		}
+
+
+		function mover(obj){
+			obj.innerHTML="Welcome";
+		}
+		function mout(obj){
+			obj.innerHTML= "Good Bye"
+		}
+
+		function button(){
+			alert("HEllO WORLD");
+		}
+
+
+	</script>
+</body>
+</html>

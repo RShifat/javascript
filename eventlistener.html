@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<style>
+		</style>
+		<button id="click">Show </button>
+		<p id="demo"></p>
+		
+		<div id="demo1">
+			<select  id="country">
+				<option value="">Select Option</option>
+				<option value="1">Bangladesh</option>
+				<option value="2">Pakistan</option>
+			</select>
+		</div>
+
+		<div id="box">
+			<input type="text" id="myinput" name="">
+			<h1></h1>
+		</div>
+
+		<button type="button" id="hello">Window</button>
+		<script>
+			document.getElementById("click").addEventListener("mouseover",myfunction);
+		function myfunction(){
+			document.getElementById("demo").innerHTML="WELCOME";
+		}
+		   document.getElementById("click").addEventListener("mouseout",myfunction1);
+		function myfunction1(){
+			document.getElementById("demo").innerHTML=" ";
+		}
+
+		document.getElementById("hello").addEventListener("click",win(){
+			window.open("https://rshifat.000webhostapp.com/#about","PRINT WINDOW");
+		});
+
+	</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="button" value="Previous" onclick="previous()" name="">
+
+	<input type="button" value="Next" onclick="next()" name=""><br><br>
+
+
+     <button type="buton" onclick="setTimeout(timeout,3000)">Time Out </button><br><br>
+
+     <button type="button" onclick="Confirm()">Confirm</button>
+
+	<script>
+		function previous(){
+			window.history.back();
+		}
+		function next(){
+			window.history.forward();
+		}
+
+		function timeout(){
+			alert("Welcome Shafi");
+		}
+
+		function Confirm(){
+			var userconfirmation = confirm("Do you want to visit??");
+			if (userconfirmation==true) {
+				window.open("https://www.facebook.com/");
+				return true;
+			}
+			else{
+				alert("user rejected");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
